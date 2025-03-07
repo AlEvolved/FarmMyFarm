@@ -1,0 +1,66 @@
+.grid-cell {
+    -fx-min-width: 100px;
+    -fx-min-height: 100px;
+    -fx-alignment: center;
+    -fx-font-size: 16px;
+    -fx-border-color: #333333;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.empty-cell {
+    -fx-background-color: #a2d5f2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+.growing-cell {
+    -fx-background-color: #f9d56e;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+.harvest-cell {
+    -fx-background-color: #a8e6cf;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+.planted-cell {
+    -fx-background-color: #f9d56e;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+/* Effets au survol */
+.grid-cell:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 0, 3);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Effets au clic */
+.grid-cell:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+.grid-cell {
+    -fx-transition: -fx-background-color 0.3s;
+}
+
+.harvest-cell {
+    -fx-background-color: #90EE90;
+    -fx-border-color: #006400;
+}
+
+.growing-cell {
+    -fx-background-color: #FFE4B5;
+    -fx-border-color: #8B4513;
+}
+.animal-cell {
+    -fx-background-color: #E8F5E9;
+    -fx-border-color: #2E7D32;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 2);
+}
+
+.animal-cell:hover {
+    -fx-background-color: #C8E6C9;
+}
